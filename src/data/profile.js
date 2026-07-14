@@ -12,6 +12,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/dhea-miradikna-153b8324b",
   github: "https://github.com/dheamiradikna",
   photo: "profile.jpg",
+  cvFile: "Dhea-Putri-Miradikna-CV.pdf",
   bio: `Software Developer with hands-on backend engineering experience —
   building an ERP360 platform end to end at PT Nata Connexindo (VB.NET,
   ASP.NET WebForms, SQL Server) and supporting technical documentation and

@@ -31,6 +31,11 @@ export default function Contact() {
             <span className="term-prompt">$</span> contact --name "{profile.name}"
           </div>
           <div className="contact-rows">
+            <a className="contact-row" href={profile.cvFile} download>
+              <span className="contact-flag">--resume</span>
+              <span className="contact-val">{profile.cvFile}</span>
+              <span className="contact-copy">download ↓</span>
+            </a>
             <button className="contact-row" onClick={copyEmail}>
               <span className="contact-flag">--email</span>
               <span className="contact-val">{profile.email}</span>

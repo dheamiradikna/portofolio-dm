@@ -70,6 +70,9 @@ export default function Hero() {
             <a className="btn btn-primary" href="#projects" onClick={(e) => { e.preventDefault(); document.getElementById("projects")?.scrollIntoView({behavior:"smooth"}); }}>
               ./view-projects
             </a>
+            <a className="btn btn-ghost" href={profile.cvFile} download>
+              ./download-cv
+            </a>
             <a className="btn btn-ghost" href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById("contact")?.scrollIntoView({behavior:"smooth"}); }}>
               ./get-in-touch
             </a>
