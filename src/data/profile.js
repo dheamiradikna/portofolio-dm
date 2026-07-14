@@ -127,23 +127,26 @@ export const skills = {
 
 export const trainings = [
   {
-    title: "Belajar Penerapan Data Science dengan Microsoft Fabric",
+    title: "Microsoft Elevate Training Center",
     org: "Dicoding Indonesia",
     year: "2026",
-    points: [
-      "Exploratory Data Analysis (EDA): loading data into notebooks, handling missing data, and visualization.",
-      "Data preprocessing with Data Wrangler; ML model training and tracking with MLflow on Microsoft Fabric.",
-      "Model deployment and batch prediction, including saving results to Delta tables.",
-    ],
-  },
-  {
-    title: "Membangun Aplikasi Gen AI dengan Microsoft Azure",
-    org: "Dicoding Indonesia",
-    year: "2026",
-    points: [
-      "Built and deployed Generative AI applications using Azure AI Foundry, including Azure OpenAI integration.",
-      "Implemented RAG (Retrieval Augmented Generation) patterns with Azure AI Search and Prompt Flow.",
-      "Built and deployed an interactive chat application using the Azure AI Foundry SDK.",
+    subcourses: [
+      {
+        name: "Belajar Penerapan Data Science dengan Microsoft Fabric",
+        points: [
+          "Exploratory Data Analysis (EDA): loading data into notebooks, handling missing data, and visualization.",
+          "Data preprocessing with Data Wrangler; ML model training and tracking with MLflow on Microsoft Fabric.",
+          "Model deployment and batch prediction, including saving results to Delta tables.",
+        ],
+      },
+      {
+        name: "Membangun Aplikasi Gen AI dengan Microsoft Azure",
+        points: [
+          "Built and deployed Generative AI applications using Azure AI Foundry, including Azure OpenAI integration.",
+          "Implemented RAG (Retrieval Augmented Generation) patterns with Azure AI Search and Prompt Flow.",
+          "Built and deployed an interactive chat application using the Azure AI Foundry SDK.",
+        ],
+      },
     ],
   },
   {
@@ -183,8 +186,7 @@ export const certifications = [
   { name: "RevoU Mini Course – Data Analytics Program", year: "2022" },
   { name: "MySkill – Data Analyst Bootcamp", year: "2023" },
   { name: "Dicoding – AI Mini Camp", year: "2026" },
-  { name: "Dicoding – Belajar Penerapan Data Science dengan Microsoft Fabric", year: "2026" },
-  { name: "Dicoding – Membangun Aplikasi Gen AI dengan Microsoft Azure", year: "2026" },
+  { name: "Microsoft Elevate Training Center – Dicoding Indonesia", year: "2026" },
 ];
 
 export const certificatesLink = "https://bit.ly/allCertificatesDM";

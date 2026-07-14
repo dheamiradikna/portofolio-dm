@@ -44,11 +44,26 @@ export default function Certifications() {
                   <span className="tag training-org">{t.org} · {t.year}</span>
                 </button>
                 {openIdx === i && (
-                  <ul className="training-points">
-                    {t.points.map((p, j) => (
-                      <li key={j}>{p}</li>
-                    ))}
-                  </ul>
+                  t.subcourses ? (
+                    <div className="training-subcourses">
+                      {t.subcourses.map((sc, k) => (
+                        <div className="training-subcourse" key={k}>
+                          <div className="training-subname">{sc.name}</div>
+                          <ul className="training-points">
+                            {sc.points.map((p, j) => (
+                              <li key={j}>{p}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <ul className="training-points">
+                      {t.points.map((p, j) => (
+                        <li key={j}>{p}</li>
+                      ))}
+                    </ul>
+                  )
                 )}
               </div>
             ))}
@@ -125,6 +140,17 @@ export default function Certifications() {
           line-height: 1.7;
         }
         .training-points li + li { margin-top: 4px; }
+        .training-subcourses {
+          padding: 0 18px 14px 46px;
+        }
+        .training-subcourse + .training-subcourse { margin-top: 16px; }
+        .training-subname {
+          font-family: var(--mono);
+          font-size: 13px;
+          color: var(--teal);
+          margin-bottom: 6px;
+        }
+        .training-subcourses .training-points { padding-left: 18px; }
       `}</style>
     </section>
   );
